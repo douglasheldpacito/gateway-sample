@@ -1,0 +1,33 @@
+{
+  "name": "api-sample",
+  "version": "1.0.0",
+  "description": "Sample of API to Microservices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglasheldpacito/api-sample.git"
+  },
+  "author": "Douglas Held Pacito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/douglasheldpacito/api-sample/issues"
+  },
+  "homepage": "https://github.com/douglasheldpacito/api-sample#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "dotenv-safe": "^6.1.0",
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "morgan": "^1.9.1"
+  }
+}
