@@ -1,5 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
+const cors = require("cors");
 const helmet = require("helmet");
 const cookieParser = require("cookie-parser");
 
@@ -9,6 +10,7 @@ var server = null;
 
 function start(callback) {
   const app = express();
+  app.use(cors());
   app.use(morgan("dev"));
   app.use(helmet());
   app.use(express.json());
@@ -20,7 +22,7 @@ function start(callback) {
     res.status(500).send("Something went wrong!");
   });
 
-  app.use(require("../src/routes/routeExample"));
+  app.use("/api", require("../src/routes/routeExample"));
 
   server = app.listen(process.env.SERVICE_PORT, () => callback(null, server));
 }
