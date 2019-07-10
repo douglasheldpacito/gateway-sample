@@ -1,2 +1,3 @@
-# api-sample
-Sample of API to Microservices
+# gateway-sample
+
+Sample of Gateway to Microservices
